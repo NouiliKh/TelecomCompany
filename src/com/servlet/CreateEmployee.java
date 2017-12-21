@@ -1,5 +1,6 @@
 package com.servlet;
 
+import com.bean.Administrator;
 import com.connection.ConnectionBD;
 
 import javax.servlet.ServletException;
@@ -21,6 +22,7 @@ public class CreateEmployee extends HttpServlet {
         String Email =request.getParameter("Email");
         String Password =request.getParameter("Password");
         String ServiceName =request.getParameter("ServiceName");
+
         if(ServiceName.equals("Payment"))
         {
              ServiceNumber=2;
@@ -34,12 +36,8 @@ public class CreateEmployee extends HttpServlet {
              ServiceNumber=3;
         }
 
-
-
-        ConnectionBD Con = new ConnectionBD();
-        Con.driver();
-        Con.OpenConnexion();
-        Integer rs= Con.updateExec("INSERT INTO Employee (Name,FamilyName,Address,Email,Password,NumService)VALUES ('"+Name+"','"+FamilyName+"','"+Email+"','"+Address+"','"+Password+"','"+ServiceNumber+"'); ");
+        Administrator Admin =new Administrator(Name,FamilyName,Address,Email,Password,ServiceNumber);
+        Admin.CreateEmployee();
         response.sendRedirect("WelcomeAdmin.jsp");
 
 
