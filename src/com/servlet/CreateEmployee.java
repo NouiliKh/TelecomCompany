@@ -40,6 +40,8 @@ public class CreateEmployee extends HttpServlet {
         Con.driver();
         Con.OpenConnexion();
         Integer rs= Con.updateExec("INSERT INTO Employee (Name,FamilyName,Address,Email,Password,NumService)VALUES ('"+Name+"','"+FamilyName+"','"+Email+"','"+Address+"','"+Password+"','"+ServiceNumber+"'); ");
+        response.sendRedirect("WelcomeAdmin.jsp");
+
 
     }
 
