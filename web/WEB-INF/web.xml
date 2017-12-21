@@ -33,4 +33,16 @@
         <url-pattern>/CreateService</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>CreateSubscriber</servlet-name>
+        <servlet-class>com.servlet.CreateSubscriber</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateSubscriber</servlet-name>
+        <url-pattern>/CreateSubscriber</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>

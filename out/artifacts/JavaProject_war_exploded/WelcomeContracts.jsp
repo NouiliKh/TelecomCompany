@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Welcome Contract Team !</title>
 </head>
 <body>
+<button type="button"  onclick="location.href='createSubscriber.jsp'">Create a subscriber</button>
+<button type="button" onclick="location.href='createSIM.jsp'">Create SIM</button>
 
 </body>
 </html>

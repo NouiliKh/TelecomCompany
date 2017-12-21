@@ -31,7 +31,6 @@
 </body>
 <script>
     function yesnoCheck(nameselect) {
-        console.log("dazda");
         if(nameselect){
             admOptionValue = document.getElementById("Network").value;
             if(admOptionValue == nameselect.value){

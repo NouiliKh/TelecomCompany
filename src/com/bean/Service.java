@@ -2,6 +2,10 @@ package com.bean;
 
 import com.connection.ConnectionBD;
 
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class Service {
     String ServiceDescription;
     float Price;
@@ -31,4 +35,17 @@ public class Service {
         Con.closeConnection();
     }
 
+    public static   ResultSet getData()
+    {
+        ConnectionBD Con = new ConnectionBD();
+        Con.driver();
+        Con.OpenConnexion();
+        ResultSet rs= Con.selectExec("SELECT ServiceID,Description FROM VocalService ;");
+        return rs;
+
+    }
+
+
 }
+
+
