@@ -23,4 +23,14 @@
         <url-pattern>/CreateEmployee</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>CreateService</servlet-name>
+        <servlet-class>com.servlet.CreateService</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateService</servlet-name>
+        <url-pattern>/CreateService</url-pattern>
+    </servlet-mapping>
+
 </web-app>

@@ -16,11 +16,11 @@ public class Administrator extends Employee {
         Con.driver();
         Con.OpenConnexion();
         Integer rs= Con.updateExec("INSERT INTO Employee (Name,FamilyName,Address,Email,Password,NumService)VALUES ('"+this.Name+"','"+this.FamilyName+"','"+this.Email+"','"+this.Address+"','"+this.Password+"','"+this.ServiceNumber+"'); ");
+        Con.closeConnection();
     }
 
-    public void CreateService()
-    {
 
-    }
+
+
 
 }
