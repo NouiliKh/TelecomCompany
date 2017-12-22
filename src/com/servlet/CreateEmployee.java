@@ -16,6 +16,7 @@ public class CreateEmployee extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         Integer ServiceNumber;
+        Integer CIN = Integer.valueOf(request.getParameter("CIN"));
         String Name=request.getParameter("Name");
         String FamilyName =request.getParameter("FamilyName");
         String Address =request.getParameter("Address");
@@ -36,7 +37,7 @@ public class CreateEmployee extends HttpServlet {
              ServiceNumber=3;
         }
 
-        Administrator Admin =new Administrator(Name,FamilyName,Address,Email,Password,ServiceNumber);
+        Administrator Admin =new Administrator(CIN,Name,FamilyName,Address,Email,Password,ServiceNumber);
         Admin.CreateEmployee();
         response.sendRedirect("WelcomeAdmin.jsp");
 

@@ -4,8 +4,6 @@ import com.connection.ConnectionBD;
 
 
 import java.sql.ResultSet;
-import java.sql.SQLException;
-
 public class Service {
     String ServiceDescription;
     float Price;

@@ -13,6 +13,7 @@
 <body>
 
 <form action="CreateSubscriber" method="post">
+    <br/>CIN:<input type="number" name="CIN">
     <br/>Name:<input type="text" name="Name">
     <br/>FamilyName:<input type="text" name="FamilyName">
     <br/>Address:<input type="text" name="Address">

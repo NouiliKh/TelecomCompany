@@ -16,9 +16,10 @@
 <body>
 
 <form action="CreateSIM" method="post">
-    <br/><B>Select a SIM type</B> <BR>
+
+    <br/>Subscriber CIN:<input type="number" name="CIN">
     <SELECT onchange="yesnoCheckSIMType(this);"  name="SIMType">
-        <OPTION id="Landline" SELECTED> landline</OPTION>
+        <OPTION id="Landline" SELECTED> Landline</OPTION>
         <OPTION id="Mobile" > Mobile</OPTION>
     </SELECT>
 
@@ -54,45 +55,44 @@
 
 
         <div id="Ok1" style="display: block;">
-            <SELECT name="SIMPaymentType">
+            <SELECT name="SIMPaymentType1">
                 <%
                     ResultSet rs1 = NetworkService.getData();
                     while(rs1.next()){ %>
-                <OPTION id=<%= rs1.getString(1) %> > <%= rs1.getString(2) %></OPTION>
+                <OPTION value=<%= rs1.getString(1) %> > <%= rs1.getString(2) %></OPTION>
                 <% } %>
             </SELECT>
         </div>
 
         <div id="Ok2" style="display: none;">
-            <SELECT name="SIMPaymentType">
+            <SELECT name="SIMPaymentType2">
                 <%
                     ResultSet rs2 = Service.getData();
                     while(rs2.next()){ %>
-                <OPTION id=<%= rs2.getString(1) %> > <%= rs2.getString(2) %></OPTION>
+                <OPTION value= <%=rs2.getString(1) %> > <%= rs2.getString(2) %></OPTION>
                 <% } %>
             </SELECT>
         </div>
 
         <div id="Ok3" style="display: none;">
-            <SELECT name="SIMPaymentType">
+            <SELECT name="SIMPaymentType3">
                 <%
                     ResultSet rs4 = NetworkService.getData();
                     while(rs4.next()){ %>
-                <OPTION id=<%= rs4.getString(1) %> > <%= rs4.getString(2) %></OPTION>
+                <OPTION value=<%= rs4.getString(1) %> > <%= rs4.getString(2) %></OPTION>
                 <% } %>
+
+            </SELECT>
+
+            <SELECT name="SIMPaymentType4">
                 <%
-                    ResultSet rs5 = Service.getData();
-                    while(rs5.next()){ %>
-                <OPTION id=<%= rs5.getString(1) %> > <%= rs5.getString(2) %></OPTION>
+                    ResultSet rs7 = Service.getData();
+                    while(rs7.next()){ %>
+                <OPTION value=<%= rs7.getString(1) %> > <%= rs7.getString(2) %></OPTION>
                 <% } %>
             </SELECT>
+
         </div>
-
-
-
-
-
-
     </div>
 
 

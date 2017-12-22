@@ -6,8 +6,8 @@ import com.servlet.CreateEmployee;
 public class Administrator extends Employee {
 
 
-    public Administrator(String Name, String FamilyName, String Address, String Email, String Password, Integer ServiceNumber) {
-        super(Name, FamilyName, Address, Email, Password, ServiceNumber);
+    public Administrator(Integer CIN,String Name, String FamilyName, String Address, String Email, String Password, Integer ServiceNumber) {
+        super(CIN,Name, FamilyName, Address, Email, Password, ServiceNumber);
     }
 
     public void CreateEmployee()

@@ -13,7 +13,7 @@ import java.io.IOException;
 @WebServlet(name = "CreateSubscriber")
 public class CreateSubscriber extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        Integer CIN = Integer.valueOf(request.getParameter("CIN"));
         String Name=request.getParameter("Name");
         String FamilyName =request.getParameter("FamilyName");
         String Address =request.getParameter("Address");
@@ -21,7 +21,7 @@ public class CreateSubscriber extends HttpServlet {
 
 
 
-        Personne Admin =new Personne(Name,FamilyName,Address,Email);
+        Personne Admin =new Personne(CIN,Name,FamilyName,Address,Email);
         Admin.CreateSubsciber();
         response.sendRedirect("WelcomeContracts.jsp");
     }

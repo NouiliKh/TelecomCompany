@@ -44,5 +44,15 @@
         <url-pattern>/CreateSubscriber</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>CreateSIM</servlet-name>
+        <servlet-class>com.servlet.CreateSIM</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateSIM</servlet-name>
+        <url-pattern>/CreateSIM</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
