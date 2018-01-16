@@ -15,7 +15,7 @@ public class Administrator extends Employee {
         ConnectionBD Con = new ConnectionBD();
         Con.driver();
         Con.OpenConnexion();
-        Integer rs= Con.updateExec("INSERT INTO Employee (Name,FamilyName,Address,Email,Password,NumService)VALUES ('"+this.Name+"','"+this.FamilyName+"','"+this.Email+"','"+this.Address+"','"+this.Password+"','"+this.ServiceNumber+"'); ");
+        Integer rs= Con.updateExec("INSERT INTO Employee (CIN,Name,FamilyName,Address,Email,Password,NumService)VALUES ('"+this.CIN+"','"+this.Name+"','"+this.FamilyName+"','"+this.Address+"','"+this.Email+"','"+this.Password+"','"+this.ServiceNumber+"'); ");
         Con.closeConnection();
     }
 

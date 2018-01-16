@@ -34,13 +34,13 @@ public class CreateSIM extends HttpServlet {
 
             if(SIMServiceType.equals("Network")) {
                 Integer NetworkServiceNum = Integer.valueOf(request.getParameter("SIMPaymentType1"));
-                MobileSIM Mbsim = new MobileSIM(CIN,SIMConnectionType,SIMNetworkType,SIMPaymentType,NetworkServiceNum,Integer.valueOf(null));
+                MobileSIM Mbsim = new MobileSIM(CIN,SIMConnectionType,SIMNetworkType,SIMPaymentType,NetworkServiceNum,0);
                 Mbsim.CreateSIM();
             }
-             else if (SIMServiceType.equals("Landline"))
+             else if (SIMServiceType.equals("Vocal"))
             {
                 Integer VocalServiceNum = Integer.valueOf(request.getParameter("SIMPaymentType2"));
-                MobileSIM Mbsim = new MobileSIM(CIN,SIMConnectionType,SIMNetworkType,SIMPaymentType,Integer.valueOf(null),VocalServiceNum);
+                MobileSIM Mbsim = new MobileSIM(CIN,SIMConnectionType,SIMNetworkType,SIMPaymentType,0,VocalServiceNum);
                 Mbsim.CreateSIM();
             }
             else
@@ -53,6 +53,9 @@ public class CreateSIM extends HttpServlet {
 
 
         }
+
+        response.sendRedirect("WelcomeContracts.jsp");
+
 
 
 

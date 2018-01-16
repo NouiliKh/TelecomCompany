@@ -2,6 +2,9 @@ package com.bean;
 
 
 import com.connection.ConnectionBD;
+import org.apache.commons.logging.Log;
+
+import java.util.logging.Logger;
 
 public class MobileSIM extends SIM {
 
@@ -31,7 +34,7 @@ public class MobileSIM extends SIM {
         ConnectionBD Con = new ConnectionBD();
         Con.driver();
         Con.OpenConnexion();
-        Integer rs= Con.updateExec("INSERT INTO Mobile (Number,Type,Network,payment,VocalServiceNumber,NetworkServiceNumber,SubscriberRegistrationNumber) VALUES ('"+this.Number+"','"+this.ConnectionType+"','"+this.NetworkType+"','"+this.PaymentType+"','"+this.NetworkServiceNum+"','"+this.VocalServiceNum+"','"+this.CIN+"'); ");
+        Integer rs= Con.updateExec("INSERT INTO Mobile (Number,ConnectionType,Network,payment,VocalServiceNumber,NetworkServiceNumber,SubscriberRegistrationNumber) VALUES ('"+this.Number+"','"+this.ConnectionType+"','"+this.NetworkType+"','"+this.PaymentType+"','"+this.VocalServiceNum+"','"+this.NetworkServiceNum+"','"+this.CIN+"'); ");
         Con.closeConnection();
     }
 

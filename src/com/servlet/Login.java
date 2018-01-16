@@ -22,7 +22,7 @@ public class Login extends HttpServlet {
         ConnectionBD Con = new ConnectionBD();
         Con.driver();
         Con.OpenConnexion();
-        ResultSet rs= Con.selectExec("SELECT NumService,Id FROM Employee WHERE Email='" + username + "' AND Password = '" + password + "';");
+        ResultSet rs= Con.selectExec("SELECT NumService,CIN FROM Employee WHERE Email='" + username + "' AND Password = '" + password + "';");
 
         try {
             if (!rs.next())
