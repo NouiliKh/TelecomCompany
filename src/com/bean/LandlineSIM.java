@@ -20,6 +20,7 @@ public class LandlineSIM extends SIM {
         Con.driver();
         Con.OpenConnexion();
         Integer rs= Con.updateExec("INSERT INTO Landline (Number,GeographicLocalisation,SubscriberRegistrationNumber)VALUES ('"+this.Number+"','"+this.GeographicLocalissation+"','"+this.CIN+"'); ");
+        Integer rs2= Con.updateExec("INSERT INTO SIMNumber (SIMnumber) VALUES ('"+this.Number+"'); ");
         Con.closeConnection();
     }
 

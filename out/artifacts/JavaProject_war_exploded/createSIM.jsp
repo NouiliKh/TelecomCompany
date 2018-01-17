@@ -161,7 +161,7 @@
 
             <!-- Branding -->
             <div class="navbar-header col-md-2">
-                <a class="navbar-brand" href="WelcomeAdmin.jsp">
+                <a class="navbar-brand" href="WelcomeContracts.jsp">
                     <strong>Welcome  </strong>Contractor !
                 </a>
                 <div class="sidebar-collapse">

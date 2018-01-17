@@ -55,4 +55,26 @@
     </servlet-mapping>
 
 
+    <servlet>
+        <servlet-name>CreateBill</servlet-name>
+        <servlet-class>com.servlet.CreateBill</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateBill</servlet-name>
+        <url-pattern>/CreateBill</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SearchBill</servlet-name>
+        <servlet-class>com.servlet.SearchBill</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchBill</servlet-name>
+        <url-pattern>/SearchBill</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>

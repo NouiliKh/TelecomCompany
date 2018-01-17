@@ -158,7 +158,7 @@
 
                             <!-- tile header -->
                             <div class="tile-header transparent">
-                                <h1><strong>Subscriber</strong> Datatable </h1>
+                                <h1><strong>Bill</strong> Datatable </h1>
                                 <div class="controls">
                                     <a href="#" class="minimize"><i class="fa fa-chevron-down"></i></a>
                                     <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
@@ -174,36 +174,32 @@
                                     <table  class="table table-datatable table-custom" id="basicDataTable1">
                                         <thead>
                                         <tr>
-                                            <th class="sort-alpha">CIN</th>
-                                            <th class="sort-alpha">Name</th>
-                                            <th class="sort-alpha">FamilyName</th>
-                                            <th class="sort-amount">Address</th>
-                                            <th class="sort-numeric">E-mail</th>
+                                            <th class="sort-alpha">SIM Number</th>
+                                            <th class="sort-alpha">Number Unity Consumed</th>
+                                            <th class="sort-alpha">Bill Date</th>
+                                            <th class="sort-amount">Total</th>
+                                            <th class="sort-numeric">Expiration Date</th>
                                         </tr>
                                         </thead>
 
                                         <tbody>
 
                                         <%
-                                            try
+
+
+                                            ResultSet rs = (ResultSet) request.getSession().getAttribute("rs");
+                                            while(rs.next())
                                             {
 
-                                                String query="select * from Subscriber";
-                                                ConnectionBD Con = new ConnectionBD();
-                                                Con.driver();
-                                                Con.OpenConnexion();
-                                                ResultSet rs =Con.selectExec(query);
-                                                while(rs.next())
-                                                {
 
                                         %>
 
                                         <tr class="odd gradeX">
-                                            <td class="text-center"><%=rs.getString("CIN") %></td>
-                                            <td class="text-center"><%=rs.getString("Name") %></td>
-                                            <td class="text-center"><%=rs.getString("FamilyName") %></td>
-                                            <td class="text-center"><%=rs.getString("Address") %></td>
-                                            <td class="text-center"><%=rs.getString("Email") %></td>
+                                            <td class="text-center"><%=rs.getString("SIMNumber") %></td>
+                                            <td class="text-center"><%=rs.getString("NumberUnityConsumed") %></td>
+                                            <td class="text-center"><%=rs.getString("Date") %></td>
+                                            <td class="text-center"><%=rs.getString("Total") %></td>
+                                            <td class="text-center"><%=rs.getString("ExpirationDate") %></td>
 
                                         </tr>
 
@@ -211,18 +207,11 @@
 
                                             }
                                         %>
+
                                         </tbody>
 
                                     </table>
-                                    <%
-                                            rs.close();
-                                            Con.closeConnection();
-                                        }
-                                        catch(Exception e)
-                                        {
-                                            e.printStackTrace();
-                                        }
-                                    %>
+
                                 </div>
                             </div>
                             <!-- /tile body -->
