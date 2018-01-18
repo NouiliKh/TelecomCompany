@@ -35,7 +35,7 @@ public class MobileSIM extends SIM {
         Con.driver();
         Con.OpenConnexion();
         Integer rs= Con.updateExec("INSERT INTO Mobile (Number,ConnectionType,Network,payment,VocalServiceNumber,NetworkServiceNumber,SubscriberRegistrationNumber) VALUES ('"+this.Number+"','"+this.ConnectionType+"','"+this.NetworkType+"','"+this.PaymentType+"','"+this.VocalServiceNum+"','"+this.NetworkServiceNum+"','"+this.CIN+"'); ");
-        Integer rs2= Con.updateExec("INSERT INTO SIMNumber (SIMnumber) VALUES ('"+this.Number+"'); ");
+        Integer rs2= Con.updateExec("INSERT INTO SIMNumber (SIMnumber,NetworkServiceType,VocalServiceType) VALUES ('"+this.NetworkServiceNum+"','"+this.VocalServiceNum+"'); ");
         Con.closeConnection();
     }
 

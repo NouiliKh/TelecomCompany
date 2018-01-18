@@ -119,6 +119,14 @@
                                     <i class="fa fa-list"></i> Create Service
                                 </a>
                             </li>
+
+                            <li>
+                                <a href="logout.jsp">
+                                    <i class="fa fa-tint"></i> Logout
+                                </a>
+                            </li>
+
+
                         </ul>
                     </li>
                 </ul>

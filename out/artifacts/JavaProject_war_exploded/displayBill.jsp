@@ -125,6 +125,13 @@
                                 </a>
                             </li>
 
+                            <li>
+                                <a href="logout.jsp">
+                                    <i class="fa fa-tint"></i> Logout
+                                </a>
+                            </li>
+
+
                         </ul>
                     </li>
                 </ul>
@@ -184,6 +191,8 @@
                                         <thead>
                                         <tr>
                                             <th class="sort-alpha">SIM Number</th>
+                                            <th class="sort-alpha">Network Service Type</th>
+                                            <th class="sort-alpha">Vocal Service Type</th>
                                             <th class="sort-alpha">Number Unity Consumed</th>
                                             <th class="sort-alpha">Bill Date</th>
                                             <th class="sort-amount">Total</th>
@@ -205,6 +214,8 @@
 
                                         <tr class="odd gradeX">
                                             <td class="text-center"><%=rs.getString("SIMNumber") %></td>
+                                            <td class="text-center"><%=rs.getString("NetworkServiceType") %></td>
+                                            <td class="text-center"><%=rs.getString("VocalServiceType") %></td>
                                             <td class="text-center"><%=rs.getString("NumberUnityConsumed") %></td>
                                             <td class="text-center"><%=rs.getString("Date") %></td>
                                             <td class="text-center"><%=rs.getString("Total") %></td>
