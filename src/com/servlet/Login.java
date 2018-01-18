@@ -38,17 +38,21 @@ public class Login extends HttpServlet {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-                HttpSession session = request.getSession();
-                session.setAttribute("id",Id);
                 if (Integer.parseInt(rs.getString(1)) == 1) {
                     Con.closeConnection();
+                    HttpSession session = request.getSession(true);
+                    session.setAttribute("user", "admin");
                     response.sendRedirect("WelcomeAdmin.jsp");
 
                 } else if (Integer.parseInt(rs.getString(1)) == 2) {
                     Con.closeConnection();
+                    HttpSession session = request.getSession(true);
+                    session.setAttribute("user", "Payment");
                     response.sendRedirect("WelcomePayment.jsp");
                 } else {
                     Con.closeConnection();
+                    HttpSession session = request.getSession(true);
+                    session.setAttribute("user", "Contract");
                     response.sendRedirect("WelcomeContracts.jsp");
                 }
             }

@@ -60,6 +60,15 @@
     <![endif]-->
 </head>
 <body class="bg-1">
+<%
+    if (session != null) {
+        if (session.getAttribute("user") != "Payment") {
+            response.sendRedirect("login.jsp");
+
+        }
+    }
+%>
+
 
 <!-- Preloader -->
 <div class="mask"><div id="loader"></div></div>
@@ -122,13 +131,13 @@
                             </li>
 
                             <li class ="active">
-                                <a href="SearchBill.jsp" >
+                                <a href="searchBill.jsp" >
                                     <i class="fa fa-list"></i> Search for a Bill
                                 </a>
                             </li>
 
                             <li>
-                                <a href="SendBill.jsp" >
+                                <a href="sendBill.jsp" >
                                     <i class="fa fa-list"></i> Send Bill
                                 </a>
                             </li>

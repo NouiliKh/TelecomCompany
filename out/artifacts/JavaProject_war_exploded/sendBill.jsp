@@ -1,12 +1,28 @@
-<%@ page import="com.connection.ConnectionBD" %>
-<%@ page import="java.sql.ResultSet" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: gomni
   Date: 21/12/17
-  Time: 09:55
+  Time: 16:22
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%--<html>
+<head>
+    <title>Create a subscriber</title>
+</head>
+<body>
 
+<form action="CreateSubscriber" method="post">
+    <br/>CIN:<input type="number" name="CIN">
+    <br/>Name:<input type="text" name="Name">
+    <br/>FamilyName:<input type="text" name="FamilyName">
+    <br/>Address:<input type="text" name="Address">
+    <br/>Email:<input type="text" name="Email">
+    <br/><input type="submit" value="Submit">
+</form>
+
+</body>
+</html>--%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
@@ -14,7 +30,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Welcome Admin !</title>
+    <title> Welcome Contractor !</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
 
@@ -46,7 +62,7 @@
 <body class="bg-1">
 <%
     if (session != null) {
-        if (session.getAttribute("user") != "Contract") {
+        if (session.getAttribute("user") != "Payment") {
             response.sendRedirect("login.jsp");
 
         }
@@ -73,8 +89,8 @@
 
             <!-- Branding -->
             <div class="navbar-header col-md-2">
-                <a class="navbar-brand" href="WelcomeContracts.jsp">
-                    <strong>Welcome  </strong>Contractor !
+                <a class="navbar-brand" href="WelcomeAdmin.jsp">
+                    <strong>Welcome  </strong>Payment Team !
                 </a>
                 <div class="sidebar-collapse">
                     <a href="#">
@@ -103,22 +119,29 @@
                         <ul class="menu">
 
                             <li class ="active">
-                                <a href="#">
+                                <a href="WelcomePayment.jsp">
                                     <i class="fa fa-tachometer"></i> Dashboard
                                 </a>
                             </li>
 
                             <li>
-                                <a href="createSubscriber.jsp" >
-                                    <i class="fa fa-list"></i> Create Subscriber
+                                <a href="CreateBill.jsp" >
+                                    <i class="fa fa-list"></i> Create Bill
                                 </a>
                             </li>
 
-                            <li>
-                                <a href="createSIM.jsp" >
-                                    <i class="fa fa-list"></i> Create SIM
+                            <li >
+                                <a href="searchBill.jsp" >
+                                    <i class="fa fa-list"></i> Search for a Bill
                                 </a>
                             </li>
+
+                            <li  class ="active">
+                                <a href="sendBill.jsp" >
+                                    <i class="fa fa-list"></i> Send Bill
+                                </a>
+                            </li>
+
                         </ul>
                     </li>
                 </ul>
@@ -132,36 +155,48 @@
         </div>
         <!-- Fixed navbar end -->
 
+
         <!-- Page content -->
         <div id="content" class="col-md-12">
 
             <!-- page header -->
             <div class="pageheader">
 
-                <h2><i class="fa fa-lightbulb-o" style="line-height: 48px;padding-left: 0;"></i> DataTables </h2>
+
+                <h2><i class="fa fa-thumb-tack" style="line-height: 48px;padding-left: 1px;"></i> Search for a Bill
+
+
 
             </div>
             <!-- /page header -->
 
 
+
+
+
+
             <!-- content main container -->
             <div class="main">
+
+
+
 
                 <!-- row -->
                 <div class="row">
 
                     <!-- col 12 -->
-                    <div class="col-md-12">
+                    <div class="col-md-6">
 
 
 
                         <!-- tile -->
-                        <section class="tile transparent">
+                        <section class="tile color transparent-black">
+
 
 
                             <!-- tile header -->
-                            <div class="tile-header transparent">
-                                <h1><strong>Subscriber</strong> Datatable </h1>
+                            <div class="tile-header">
+                                <h1><strong>Text</strong> Inputs</h1>
                                 <div class="controls">
                                     <a href="#" class="minimize"><i class="fa fa-chevron-down"></i></a>
                                     <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
@@ -171,87 +206,54 @@
                             <!-- /tile header -->
 
                             <!-- tile body -->
-                            <div class="tile-body color transparent-black rounded-corners">
+                            <div class="tile-body">
 
-                                <div class="table-responsive">
-                                    <table  class="table table-datatable table-custom" id="basicDataTable1">
-                                        <thead>
-                                        <tr>
-                                            <th class="sort-alpha">CIN</th>
-                                            <th class="sort-alpha">Name</th>
-                                            <th class="sort-alpha">FamilyName</th>
-                                            <th class="sort-amount">Address</th>
-                                            <th class="sort-numeric">E-mail</th>
-                                        </tr>
-                                        </thead>
+                                <form action="SearchBill" method="post" class="form-horizontal" role="form">
 
-                                        <tbody>
+                                    <div class="form-group">
+                                        <label for="input01" class="col-sm-4 control-label">SIM Number</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" name="SIMNumber">
+                                        </div>
+                                    </div>
 
-                                        <%
-                                            try
-                                            {
 
-                                                String query="select * from Subscriber";
-                                                ConnectionBD Con = new ConnectionBD();
-                                                Con.driver();
-                                                Con.OpenConnexion();
-                                                ResultSet rs =Con.selectExec(query);
-                                                while(rs.next())
-                                                {
 
-                                        %>
+                                    <div class="form-group form-footer">
+                                        <div class="col-sm-offset-4 col-sm-8">
+                                            <button  value="Submit" type="submit" class="btn btn-primary">Submit</button>
+                                            <button type="reset" class="btn btn-default">Reset</button>
+                                        </div>
+                                    </div>
 
-                                        <tr class="odd gradeX">
-                                            <td class="text-center"><%=rs.getString("CIN") %></td>
-                                            <td class="text-center"><%=rs.getString("Name") %></td>
-                                            <td class="text-center"><%=rs.getString("FamilyName") %></td>
-                                            <td class="text-center"><%=rs.getString("Address") %></td>
-                                            <td class="text-center"><%=rs.getString("Email") %></td>
 
-                                        </tr>
 
-                                        <%
 
-                                            }
-                                        %>
-                                        </tbody>
 
-                                    </table>
-                                    <%
-                                            rs.close();
-                                            Con.closeConnection();
-                                        }
-                                        catch(Exception e)
-                                        {
-                                            e.printStackTrace();
-                                        }
-                                    %>
-                                </div>
+                                </form>
+
                             </div>
                             <!-- /tile body -->
+
+
+
+
                         </section>
                         <!-- /tile -->
-                        <!-- tile -->
+
+
+
+
                     </div>
-                    <!-- /col 12 -->
+
+
                 </div>
-                <!-- /row -->
             </div>
-            <!-- /content container -->
         </div>
-        <!-- Page content end -->
-    </div><!-- tab-content -->
+    </div>
 </div>
 
-</div>
-<!-- Make page fluid-->
 
-</div>
-<!-- Wrap all page content end -->
-
-
-
-<section class="videocontent" id="video"></section>
 
 
 
@@ -266,20 +268,21 @@
 <script type="text/javascript" src="assets/js/vendor/nicescroll/jquery.nicescroll.min.js"></script>
 <script type="text/javascript" src="assets/js/vendor/animate-numbers/jquery.animateNumbers.js"></script>
 <script type="text/javascript" src="assets/js/vendor/videobackground/jquery.videobackground.js"></script>
-<script type="text/javascript" src="assets/js/vendor/blockui/jquery.blockUI.js"></script>\
+<script type="text/javascript" src="assets/js/vendor/blockui/jquery.blockUI.js"></script>
 
-<script src="assets/js/vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="assets/js/vendor/datatables/ColReorderWithResize.js"></script>
-<script src="assets/js/vendor/datatables/colvis/dataTables.colVis.min.js"></script>
-<script src="assets/js/vendor/datatables/tabletools/ZeroClipboard.js"></script>
-<script src="assets/js/vendor/datatables/tabletools/dataTables.tableTools.min.js"></script>
-<script src="assets/js/vendor/datatables/dataTables.bootstrap.js"></script>
+<script src="assets/js/vendor/summernote/summernote.min.js"></script>
 
 <script src="assets/js/vendor/chosen/chosen.jquery.min.js"></script>
+
+<script src="assets/js/vendor/momentjs/moment-with-langs.min.js"></script>
+<script src="assets/js/vendor/datepicker/bootstrap-datetimepicker.min.js"></script>
+
+<script src="assets/js/vendor/colorpicker/bootstrap-colorpicker.min.js"></script>
+
+<script src="assets/js/vendor/colorpalette/bootstrap-colorpalette.js"></script>
 
 <script src="assets/js/minimal.min.js"></script>
 
 
 </body>
 </html>
-

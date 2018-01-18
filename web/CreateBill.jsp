@@ -6,25 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--<html>
-<head>
-    <title>Create a subscriber</title>
-</head>
-<body>
 
-<form action="CreateSubscriber" method="post">
-    <br/>CIN:<input type="number" name="CIN">
-    <br/>Name:<input type="text" name="Name">
-    <br/>FamilyName:<input type="text" name="FamilyName">
-    <br/>Address:<input type="text" name="Address">
-    <br/>Email:<input type="text" name="Email">
-    <br/><input type="submit" value="Submit">
-</form>
-
-</body>
-</html>--%>
-
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
 <!DOCTYPE html>
@@ -60,6 +42,15 @@
     <![endif]-->
 </head>
 <body class="bg-1">
+<%
+    if (session != null) {
+        if (session.getAttribute("user") != "Payment") {
+            response.sendRedirect("login.jsp");
+
+        }
+    }
+%>
+
 
 <!-- Preloader -->
 <div class="mask"><div id="loader"></div></div>
@@ -122,13 +113,13 @@
                             </li>
 
                             <li>
-                                <a href="SearchBill.jsp" >
+                                <a href="searchBill.jsp" >
                                     <i class="fa fa-list"></i> Search for a Bill
                                 </a>
                             </li>
 
                             <li>
-                                <a href="SendBill.jsp" >
+                                <a href="sendBill.jsp" >
                                     <i class="fa fa-list"></i> Send Bill
                                 </a>
                             </li>

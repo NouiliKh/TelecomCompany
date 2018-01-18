@@ -43,6 +43,15 @@
     <![endif]-->
 </head>
 <body class="bg-1">
+<%
+    if (session != null) {
+        if (session.getAttribute("user") != "Payment") {
+            response.sendRedirect("login.jsp");
+
+        }
+    }
+%>
+
 
 <!-- Preloader -->
 <div class="mask"><div id="loader"></div></div>

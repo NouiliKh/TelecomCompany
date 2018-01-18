@@ -42,6 +42,15 @@
 </head>
 <body class="bg-1">
 
+<%
+    if (session != null) {
+        if (session.getAttribute("user") != "admin") {
+            response.sendRedirect("Login.jsp");
+
+        }
+    }
+%>
+
 <!-- Preloader -->
 <div class="mask"><div id="loader"></div></div>
 <!--/Preloader -->

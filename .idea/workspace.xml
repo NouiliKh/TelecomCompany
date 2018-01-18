@@ -7,28 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adbdbcae-d140-485b-89dd-5ff799c76840" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bean/Bill.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/CreateBill.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/servlet/SearchBill.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/CreateBill.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/displayBill.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/searchBill.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/WEB-INF/classes/com/bean/bill.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaProject/com/bean/bill.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/bean/bill.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/WEB-INF/classes/com/bean/LandlineSIM.class" afterPath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/WEB-INF/classes/com/bean/LandlineSIM.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/WEB-INF/classes/com/bean/MobileSIM.class" afterPath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/WEB-INF/classes/com/bean/MobileSIM.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaProject/com/bean/LandlineSIM.class" afterPath="$PROJECT_DIR$/out/production/JavaProject/com/bean/LandlineSIM.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaProject/com/bean/MobileSIM.class" afterPath="$PROJECT_DIR$/out/production/JavaProject/com/bean/MobileSIM.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/sendBill.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/smtp-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/WelcomePayment.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/WelcomePayment.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/createSIM.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/createSIM.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bean/LandlineSIM.java" afterPath="$PROJECT_DIR$/src/com/bean/LandlineSIM.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bean/MobileSIM.java" afterPath="$PROJECT_DIR$/src/com/bean/MobileSIM.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/CreateBill.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/CreateBill.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/searchBill.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JavaProject_war_exploded/searchBill.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/servlet/Login.java" afterPath="$PROJECT_DIR$/src/com/servlet/Login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/CreateBill.jsp" afterPath="$PROJECT_DIR$/web/CreateBill.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WelcomeAdmin.jsp" afterPath="$PROJECT_DIR$/web/WelcomeAdmin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WelcomeContracts.jsp" afterPath="$PROJECT_DIR$/web/WelcomeContracts.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WelcomePayment.jsp" afterPath="$PROJECT_DIR$/web/WelcomePayment.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/createEmployee.jsp" afterPath="$PROJECT_DIR$/web/createEmployee.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/createSIM.jsp" afterPath="$PROJECT_DIR$/web/createSIM.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/createService.jsp" afterPath="$PROJECT_DIR$/web/createService.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/createSubscriber.jsp" afterPath="$PROJECT_DIR$/web/createSubscriber.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/displayBill.jsp" afterPath="$PROJECT_DIR$/web/displayBill.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/searchBill.jsp" afterPath="$PROJECT_DIR$/web/searchBill.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="createSIM.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/createSIM.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="336">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,28 +68,78 @@
       <file leaf-file-name="WelcomePayment.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WelcomePayment.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="212" column="42" lean-forward="true" selection-start-line="209" selection-start-column="40" selection-end-line="212" selection-end-column="42" />
+            <state relative-caret-position="336">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchBill.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/servlet/SearchBill.java">
+      <file leaf-file-name="sendBill.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/sendBill.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="312">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="displayBill.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searchBill.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/searchBill.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateBill.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/CreateBill.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WelcomeContracts.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WelcomeContracts.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createSubscriber.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/createSubscriber.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="displayBill.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/displayBill.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="160" column="48" lean-forward="false" selection-start-line="160" selection-start-column="48" selection-end-line="160" selection-end-column="48" />
+            <state relative-caret-position="216">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/servlet/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -107,6 +152,7 @@
       <list>
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
@@ -135,27 +181,29 @@
         <option value="$PROJECT_DIR$/src/com/servlet/CreateEmployee.java" />
         <option value="$PROJECT_DIR$/src/com/bean/SIM.java" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/web/WelcomeAdmin.jsp" />
-        <option value="$PROJECT_DIR$/src/com/servlet/Login.java" />
         <option value="$PROJECT_DIR$/src/com/bean/Administrator.java" />
-        <option value="$PROJECT_DIR$/web/createEmployee.jsp" />
-        <option value="$PROJECT_DIR$/web/WelcomeContracts.jsp" />
-        <option value="$PROJECT_DIR$/web/createSubscriber.jsp" />
-        <option value="$PROJECT_DIR$/web/createService.jsp" />
         <option value="$PROJECT_DIR$/src/com/servlet/CreateSIM.java" />
-        <option value="$PROJECT_DIR$/web/createSIM.jsp" />
         <option value="$PROJECT_DIR$/src/com/bean/bill.java" />
         <option value="$PROJECT_DIR$/src/com/servlet/CreateBill.java" />
         <option value="$PROJECT_DIR$/src/com/bean/MobileSIM.java" />
         <option value="$PROJECT_DIR$/src/com/bean/LandlineSIM.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/searchBill.jsp" />
-        <option value="$PROJECT_DIR$/web/WelcomePayment.jsp" />
-        <option value="$PROJECT_DIR$/web/CreateBill.jsp" />
-        <option value="$PROJECT_DIR$/web/searchBill.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/bean/Bill.java" />
         <option value="$PROJECT_DIR$/src/com/servlet/SearchBill.java" />
+        <option value="$PROJECT_DIR$/web/smtp-config.xml" />
+        <option value="$PROJECT_DIR$/src/com/servlet/Login.java" />
+        <option value="$PROJECT_DIR$/web/createService.jsp" />
+        <option value="$PROJECT_DIR$/web/WelcomeAdmin.jsp" />
+        <option value="$PROJECT_DIR$/web/createEmployee.jsp" />
+        <option value="$PROJECT_DIR$/web/createSIM.jsp" />
+        <option value="$PROJECT_DIR$/web/WelcomeContracts.jsp" />
+        <option value="$PROJECT_DIR$/web/createSubscriber.jsp" />
         <option value="$PROJECT_DIR$/web/displayBill.jsp" />
+        <option value="$PROJECT_DIR$/web/WelcomePayment.jsp" />
+        <option value="$PROJECT_DIR$/web/sendBill.jsp" />
+        <option value="$PROJECT_DIR$/web/searchBill.jsp" />
+        <option value="$PROJECT_DIR$/web/CreateBill.jsp" />
       </list>
     </option>
   </component>
@@ -196,8 +244,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,8 +291,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,12 +574,13 @@
       <workItem from="1513852667943" duration="42910000" />
       <workItem from="1516004672420" duration="10245000" />
       <workItem from="1516093096044" duration="23072000" />
-      <workItem from="1516202860736" duration="10669000" />
+      <workItem from="1516202860736" duration="13342000" />
+      <workItem from="1516269172041" duration="2064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111756000" />
+    <option name="totallyTimeSpent" value="116493000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,9 +617,9 @@
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21069182" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1315229" sideWeight="0.6494024" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13258786" sideWeight="0.6427623" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1315229" sideWeight="0.35059762" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13258786" sideWeight="0.35723773" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -595,30 +644,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/servlet/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/connection/ConnectionBD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -769,19 +794,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/createEmployee.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="302" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/servlet/CreateService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,19 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/createService.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5256">
-          <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/servlet/CreateSubscriber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,9 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-226">
           <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="119" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -835,14 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/servlet/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bean/Personne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
@@ -855,30 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WelcomeContracts.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="233" column="34" lean-forward="true" selection-start-line="159" selection-start-column="24" selection-end-line="233" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WelcomeAdmin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="434" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/createSubscriber.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="301" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -903,45 +875,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/searchBill.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/createSIM.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1992">
-          <caret line="275" column="55" lean-forward="false" selection-start-line="275" selection-start-column="46" selection-end-line="275" selection-end-column="55" />
-          <folding>
-            <marker date="1516130977905" expanded="false" signature="758:773" ph="..." />
-            <marker date="1516130977905" expanded="false" signature="908:922" ph="..." />
-            <marker date="1516130977905" expanded="false" signature="1955:1970" ph="..." />
-            <marker date="1516130977905" expanded="false" signature="2320:2334" ph="..." />
-            <marker date="1516130977905" expanded="false" signature="2677:2691" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/CreateBill.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="117" column="47" lean-forward="false" selection-start-line="117" selection-start-column="47" selection-end-line="117" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/searchBill.jsp" />
     <entry file="file://$PROJECT_DIR$/src/com/servlet/CreateBill.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="17" column="71" lean-forward="true" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,42 +894,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/searchBill.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/servlet/SearchBill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3408">
-          <caret line="204" column="72" lean-forward="false" selection-start-line="204" selection-start-column="72" selection-end-line="204" selection-end-column="72" />
+        <state relative-caret-position="240">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/SMTPServer.tld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/createService.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/createEmployee.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/smtp-config.xml">
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WelcomeAdmin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="518">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WelcomePayment.jsp">
+    <entry file="file://$PROJECT_DIR$/web/createSIM.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="212" column="42" lean-forward="true" selection-start-line="209" selection-start-column="40" selection-end-line="212" selection-end-column="42" />
+        <state relative-caret-position="336">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/servlet/SearchBill.java">
+    <entry file="file://$PROJECT_DIR$/web/WelcomeContracts.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="509">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/createSubscriber.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/servlet/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/displayBill.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="160" column="48" lean-forward="false" selection-start-line="160" selection-start-column="48" selection-end-line="160" selection-end-column="48" />
+        <state relative-caret-position="216">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WelcomePayment.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sendBill.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/searchBill.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/CreateBill.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
