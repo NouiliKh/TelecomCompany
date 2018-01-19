@@ -3,10 +3,38 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
+    <!-- SMTP settings -->
+    <context-param>
+        <param-name>host</param-name>
+        <param-value>smtp-relay.gmail.com</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>port</param-name>
+        <param-value>25</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>tryinthismail@gmail.com</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>pass</param-name>
+        <param-value>123456789TryInThisMail</param-value>
+    </context-param>
+
+
+
+
+
+
     <context-param>
         <param-name>javax.faces.CONFIG_FILES</param-name>
         <param-value>/smtp-config.xml</param-value>
     </context-param>
+
     <servlet>
         <servlet-name>Login</servlet-name>
         <servlet-class>com.servlet.Login</servlet-class>
@@ -15,6 +43,16 @@
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EmailSending</servlet-name>
+        <servlet-class>com.servlet.EmailSending</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmailSending</servlet-name>
+        <url-pattern>/EmailSending</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -75,6 +113,7 @@
         <servlet-class>com.servlet.SearchBill</servlet-class>
 
     </servlet>
+
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>

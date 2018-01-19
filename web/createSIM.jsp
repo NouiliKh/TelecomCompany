@@ -111,13 +111,13 @@
 
                             <li >
                                 <a href="createSubscriber.jsp" >
-                                    <i class="fa fa-list"></i> Create Employee
+                                    <i class="fa fa-list"></i> Create Subscriber
                                 </a>
                             </li>
 
                             <li class ="active">
                                 <a href="createSIM.jsp" >
-                                    <i class="fa fa-list"></i> Create Service
+                                    <i class="fa fa-list"></i> Create SIM
                                 </a>
                             </li>
 

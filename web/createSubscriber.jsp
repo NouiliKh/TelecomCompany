@@ -103,20 +103,20 @@
                         <ul class="menu">
 
                             <li >
-                                <a href="WelcomeAdmin.jsp">
+                                <a href="WelcomeContracts.jsp">
                                     <i class="fa fa-tachometer"></i> Dashboard
                                 </a>
                             </li>
 
                             <li class ="active">
-                                <a href="createEmployee.jsp" >
-                                    <i class="fa fa-list"></i> Create Employee
+                                <a href="createSubscriber.jsp" >
+                                    <i class="fa fa-list"></i> Create Subscriber
                                 </a>
                             </li>
 
                             <li>
-                                <a href="createService.jsp" >
-                                    <i class="fa fa-list"></i> Create Service
+                                <a href="createSIM.jsp" >
+                                    <i class="fa fa-list"></i> Create SIM
                                 </a>
                             </li>
 
@@ -148,7 +148,7 @@
             <div class="pageheader">
 
 
-                <h2><i class="fa fa-thumb-tack" style="line-height: 48px;padding-left: 1px;"></i> Create Employee
+                <h2><i class="fa fa-thumb-tack" style="line-height: 48px;padding-left: 1px;"></i> Create Subscriber
 
 
 

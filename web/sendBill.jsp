@@ -215,7 +215,7 @@
                             <!-- tile body -->
                             <div class="tile-body">
 
-                                <form action="SearchBill" method="post" class="form-horizontal" role="form">
+                                <form action="EmailSending" method="post" class="form-horizontal" role="form">
 
                                     <div class="form-group">
                                         <label for="input01" class="col-sm-4 control-label">SIM Number</label>

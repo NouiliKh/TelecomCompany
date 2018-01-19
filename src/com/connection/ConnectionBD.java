@@ -80,6 +80,7 @@ public class ConnectionBD implements java.io.Serializable {
             System.out.println("Echec de la fermeture de l'objet ResultSet :"+ e.getMessage());
             return false ;
         } }
+
     public boolean closeStatement()
     {  try{  stmt.close();  return true ;
     }
