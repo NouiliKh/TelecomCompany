@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-
-<configuration>
-<host>www.gmail.com</host>
-<port>25</port>
-<username>administratot@gmail.com</username>
-<password>mot-de-passe</password>
-</configuration>
