@@ -28,37 +28,68 @@ public class EmailUtility {
         properties.put("mail.smtp.port", port);
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
+        String Email="";
 
-
-       /* ConnectionBD Con = new ConnectionBD();
+        ConnectionBD Con = new ConnectionBD();
         Con.driver();
         Con.OpenConnexion();
-        ResultSet rs= Con.selectExec("Select Email from Subscriber,Mobile,Landline where Mobile.SIMNumber='"+SIMNumber+"'+ AND (Mobile.SubscriberRegistrationNumber=Subscriber.CIN" +
-                " OR  Landline.SIMNumber='"+SIMNumber+"'+ AND Landline.SubscriberRegistrationNumber=Subscriber.CIN)  ");
-*/
+        ResultSet rs= Con.selectExec("Select Email from Subscriber INNER JOIN Mobile ON  Mobile.Number='"+SIMNumber+"' AND Mobile.SubscriberRegistrationNumber=Subscriber.CIN" +
+                "  UNION " +
+                "Select Email from Subscriber INNER JOIN Landline ON  Landline.Number='"+SIMNumber+"' AND Landline.SubscriberRegistrationNumber=Subscriber.CIN");
 
-       Authenticator auth = new Authenticator() {
+        try {
+            while(rs.next()) {
+               Email =(rs.getString("Email"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        Authenticator auth = new Authenticator() {
             public PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(userName, password);
+                return new PasswordAuthentication(userName,password);
             }
         };
 
-        /*Session session = Session.getInstance(properties, auth);
 
+        Session session = Session.getInstance(properties, auth);
         // creates a new e-mail message
         Message msg = new MimeMessage(session);
 
         msg.setFrom(new InternetAddress(userName));
         InternetAddress[] toAddresses = new InternetAddress[0];
-        toAddresses = new InternetAddress[]{ new InternetAddress("khalil.nouili@gmail.com") };
+        toAddresses = new InternetAddress[]{ new InternetAddress(Email) };
 
         msg.setRecipients(Message.RecipientType.TO, toAddresses);
         msg.setSubject("TelecomCompany Bill ");
         msg.setSentDate(new Date());
-        msg.setText("You need to pay ! ");
+
+        ResultSet billSearch = Bill.SearchBill(SIMNumber);
+
+        String text="";
+
+        try {
+            while(billSearch.next())
+            {
+                text =
+                "SIM : "+billSearch.getString("SIMNumber")+"\n"+
+                "Network Service: "+billSearch.getString("NetworkServiceType")+"\n"+
+                "vocal Service: "+billSearch.getString("VocalServiceType")+"\n"+
+                "unity number consumed : "+billSearch.getString("NumberUnityConsumed")+"\n"+
+                "Bill Date: "+billSearch.getString("Date")+"\n"+
+                "Total to pay: "+billSearch.getString("Total")+"\n"+
+                "Expiration Date : "+billSearch.getString("ExpirationDate")+"\n";
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+
+        msg.setText(text);
 
         // sends the e-mail
         Transport.send(msg);
-*/
     }
 }

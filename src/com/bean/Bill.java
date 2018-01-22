@@ -41,8 +41,6 @@ public class Bill {
         Con.driver();
         Con.OpenConnexion();
 
-
-
         ResultSet rs= Con.selectExec("Select * from bill INNER JOIN SIM ON  SIM.SIMNumber=bill.SIMNumber WHERE bill.SIMNumber ='"+SIMNumber+"' ");
         return rs;
     }
